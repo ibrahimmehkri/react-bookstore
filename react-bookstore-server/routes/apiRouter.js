@@ -14,6 +14,14 @@ MongoClient.connect('mongodb://localhost:27017', function(error, client) {
 
       console.log('Successfully connected to the database!');
       db = client.db('books');
+      db.collection('books').find({}).toArray(function(error, result){
+        if(error || result.length === 0){
+          const books = require('../books.json');
+          books.forEach(function(book, index){
+            db.collection('books').insertOne(book);
+          })
+        }
+      })
     }
   });
 
