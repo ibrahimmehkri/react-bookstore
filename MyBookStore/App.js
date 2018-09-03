@@ -46,7 +46,7 @@ function Header(){
 <View style={{display: 'flex', flexDirection: 'column', height: 150, backgroundColor: '#00CCCC'}}>
   <View style={{display: 'flex', flexDirection: 'row', paddingTop: 25, justifyContent: 'space-around', alignItems: 'baseline'}}>
     <TouchableHighlight>
-      <View><Text style={{fontSize: 40, fontWeight: 'bold'}}>BookStore Inc.</Text></View>
+      <View><Text style={{fontSize: 30, fontWeight: 'bold'}}>BookStore Inc.</Text></View>
     </TouchableHighlight>
     <TouchableOpacity>
       <View style={{backgroundColor: '#CCCCCC'}}><Text style={{padding: 10}}>Log in</Text></View>
